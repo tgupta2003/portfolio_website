@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    
+
+    <head>
+        <title>TG | Software Engineering</title>
+        <!-- Link to CSS file -->
+        <link rel="stylesheet" href="styles/SE.css">
+        <script src="script/home.js"></script>
+        <script src="script/click.js"></script>
+
+        <!-- Link to fonts -->
+        <!-- Didact Gothic -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+
+        <!-- Outfit -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+
+        <!-- Other: Faster One, Tilt Warp, Bayon, Megrim, Julius Sans One -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bayon&family=Faster+One&family=Julius+Sans+One&family=Megrim&family=Tilt+Warp&display=swap" rel="stylesheet">
+
+
+
+    </head>
+
+
+<!-- TO ADD VIDEO NEED TO CONVERT MOV TO MP4 -->
+    <!-- put image into div -->
+    <body style ="height: 1120px;">
+        <div class="header">
+            <!-- logo -->
+            <img id="top-logo" class="logo" src="graphics/newLogo.png"> 
+
+            <!-- buttons -->
+            <div class="header_buttons">
+                <div class="home_container">
+                    <button id="home-button" class="button1"> Home</button>
+                </div>
+
+                <div class="about_container">
+                    <button id="about-button" class="button1"> About</button>
+                </div>
+                
+
+                <!-- DROPDOWN: PORTFOLIO -->
+                <div class="dropdown">
+                    <!-- <div class="portfolio_container">
+                        <button class="button1"> Portfolio</button>
+                    </div> -->
+
+                    <div class="portfolio_container">
+                        <button class="portfolio-button"> Portfolio</button>
+                    </div>
+                   
+
+                    <div class="portfolio-overlay">
+                      
+                        <div class="port-links">
+                            <a id="a+f-link" class="overlay-link" href="#">Animation & Film</a>
+                            <a id="gd-link"  class="overlay-link" href="#">Graphic Design</a>
+                            <a id="photo-link" class="overlay-link" href="#">Photography</a>
+                            <a id="multimedia-link" class="overlay-link" href="#">Multimedia</a>
+                            <a id="SE-link" class="overlay-link1" href="#">Software Engineering</a>
+                            <a id="ux-link" class="overlay-link" href="#">UX Design</a>
+                        </div>
+                            <!-- <a class="dd-text" href="#">Graphic Design</a> -->
+                         
+                      
+                    </div>
+
+                   
+                </div>
+
+                <div class="contact_container">
+                    <button id="contact-button" class="button2"> Contact</button>
+                </div>
+               
+              
+               
+            </div>
+
+        </div>
+        
+        
+      
+        <!-- MAIN GRAPHIC -->
+        <div class="wrap">
+            <div class="container">
+                <!-- <p class="banner-text">A moment up with the stars in</p> -->
+                <p class="banner-text2"> Create-A-Graphic</p>
+                 <!-- <img class="image" src="graphics/design_shortened2.png">  -->
+                <img class="image" src="graphics/pp.png"> 
+            </div>
+                 
+                 
+                <!-- <video class="video" controls loop autoplay>
+                    <source src="test_video.mp4" type="video/mp4">
+                </video> -->
+            </div>
+
+
+        </div>
+
+        <!-- PROJECT 1: -->
+        <!-- Text on banner: left side -->
+        <div class="bottom-left">
+            <!-- blue background -->
+            <div class="blue-bg"></div>
+            <p class="paragraph">  I developed this simple mobile app in 2021 for my AP CSP end-of-year project on MIT App Inventor - one
+                of my first attempts at developing. First, the user must choose a base color, then a central graphic for their personalized image, 
+                then may choose to draw over it for further customization (input). The user gets a customized graphic as a result (output). The user may then share the final product through text or may save it
+                to their camera roll. In addition to coding with block code (javascript), the available graphics and background colors were all created by me in Adobe Illustrator. 
+                Additionally, icons such as arrows and cursive-fancy-looking text were created in Illustrator. Overall, while not perfect, I had so 
+                much fun creating this small app - it taught me a lot about the process of developing an application where 
+                you must account for the graphics, certain aspects of UX/UI, testing how the product looks/ works on different screens, and of course the code behind it. The image below is my first attempt at 
+                a sort of wireframe - lots to learn since then!
+                <br><br><span class="highlight">Software/Tools used: </span> MIT App Inventor (Javascript), Adobe Illustrator.
+               <br><br> <span class="highlight">Type:</span> Project, 11th grade. 
+               Here's an additional 
+                    <a class="link" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1txEXga_ZdEaCCwxA5DCOiConnYgHMFyM/view?usp=sharing">link</a> for the demonstration of the app :)</p>
+            <!-- text -->
+
+            <iframe class ="video" src="https://drive.google.com/file/d/1txEXga_ZdEaCCwxA5DCOiConnYgHMFyM/preview" width="680" height="500" allow="autoplay"></iframe>
+            
+
+
+        </div>
+
+
+        <img class="image2" src="graphics/demo.png"> 
+
+         <p class="banner-text">Logic behind the code/brainstorming</p> 
+         <img class="image3" src="SE/Untitled-1.png">
+
+
+         <!-- PYCHARM: PROJECT2 -->
+
+         <p class="banner-text4"> New York State Registered Tax Return Preparers & Facilitators: Java</p>
+         <div class="bottom-left2">
+            <!-- blue background -->
+            <div class="blue-bg2"></div>
+            <p class="paragraph">  
+
+                For this Data Structures project, a data set is provided from the New York State Open Data collection: New York State Registered Tax Return Preparers and Facilitators, and 
+                allows users to interact with the data set. The program takes in a CSV text file with the data (some information in the file being invalid or missing accounted for) and uses the several classes
+                created within the program to store the data of each row of the table in the CSV file with: name (first, middle ,last), location (city, state, country and zip code) & more. The user inputs what information
+                they'd like to retrieve from the file using keywords and a list of results are computed/displayed as the output. <br> <br> I had to create a NAME class which stored information about first name, last name, and the middle initial (accounting
+                for empty strings/null), create 3 constructors with the different ways names could be stored, have an equals method to check if the person's first name, last name and middle initial were the same, and implement a comparable interface 
+                to compare name objects by last, first, and middle initial. Next, I created a LOCATION taking in city, state, country and zip code as parameters. In the constructor 
+                for this class, I made sure to account for null state, country, and zip codes(if a zip value was 4 digits then the leading digit should be assumed to be zero), and invlaid zip values (non-digit chars). I created an equals method
+                and Comparable interface for this class comparing by the zip code, city name, then the state, then country (if one was null I'd compare with the next one). I created a RECORD class to store information about a particular record/row from the input file (name, business associated with record), 
+                and location. This class provided getters and setters for NAME, business, and LOCATION, an equals method, a Comparable Record interface where the comparison should be done by the persons' names as the primary key, and by the location as the secondary key, and a toString method
+                printing out these three pieces of information in a specific way. A RECORDLIST class was made to store all these unique RECORDS, inheriting from ArrayList RECORD. Here the methods included a getByName method which returns a list of records for which the keyword parameter is a substring of person's last name or first name, 
+                a getByCity method which returns a list of records for whcih the keyword is a substring of the city at which the tax preparer is located, and a getByZip method which returns a list of records for which the zip-code (if specified) matches the zip argument exactly. In all these methods, 
+                null arguments are accounted for with exception handling. I was able to use a NYS_Taxes class created by my instructor and parses the data from the input file, constructs the RecordList object and provides the user interaction, along with the CSV-parsing file provided 
+                to make the program work together as a whole. 
+                <br><br><span class="highlight">Software/Tools used: </span> Eclipse IDE (Java).
+               <br><br> <span class="highlight">Type:</span> Project, Data Structures (2023) 
+               </p>
+            <!-- text -->
+
+            <div class="tax-flex-container">
+                <img class="tax-image" src="SE/NYS-registered.png">
+                <img class="tax-image" src="SE/SE-Taxes.png">
+                <img class="tax-image" src="SE/SE-Taxes-inputs.png">
+            </div>
+
+           
+            
+
+
+        </div>
+
+
+        <p class="banner-text3"> Pycharm Project: Enhance Your Lang!</p>
+         <div class="bottom-left3">
+            <!-- blue background -->
+            <div class="blue-bg"></div>
+            <p class="paragraph"> In 2020 I took a semester course in Python for the first time. This project, created in 
+                Pycharm, was a presentation of the skills I'd learned from the course. The program takes in a paragraph in English (input) and 
+                returns a revised version of the text which substitutes words for what the program identifies as "weak" language 
+                with a stronger word choice. It displays the calculated percentage of words that are repetitive too (output). 
+                I found commonly used "weak" words and stored them in a 2D array, as well as commonly repetitive words such as "like" in 
+                another. Since the sentence/paragraph is scanned for these words stored in the arrays, there is a possiblity that 
+                the program may not catch other repetitive or weak words. If I were to revisit this project, I would 
+                try to apply the correct data structures/research of patterns in language to make the program as efficient as possible. 
+
+
+
+                <br><br><span class="highlight">Software/Tools used: </span> Pycharm IDE (Python).
+               <br><br> <span class="highlight">Type:</span> Project, 11th grade. 
+               Here's an additional 
+                    <a class="link" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1LSHUsOITdoKgzMeksA_a8mgolTg_Mkw_/view?usp=sharing">link</a> for the demonstration of the program.</p>
+            <!-- text -->
+
+            <iframe class ="video2" src="https://drive.google.com/file/d/1LSHUsOITdoKgzMeksA_a8mgolTg_Mkw_/preview" width="680" height="500" allow="autoplay"></iframe>
+            
+
+
+        </div>
+
+       
+       
+        <img class="page-bottom" src="graphics/page-end.png">
+        
+        
+
+   
+       
+
+
+    </body>
+</html>

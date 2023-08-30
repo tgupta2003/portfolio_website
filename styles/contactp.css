@@ -1,0 +1,437 @@
+
+body{
+    /* need to take off margins */
+    margin: 0; 
+    background-color: rgb(248, 251, 253);
+    overflow: hidden;
+    height: 500px;
+}
+
+
+.wrap {
+    position: relative;
+    z-index: 1; /* Add this line to set a higher z-index for the image and text container */
+  }
+
+
+.banner-text{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 100;
+    text-align: center;
+    color: black;
+    font-family: outfit;
+    font-size: 50px;
+    opacity: 1;
+    z-index: 2;
+}
+
+.contact-container{
+    margin-top: 20px;
+    transform: translate(780%, -800%);
+    /* background-color: blue; */
+    height: 60px;
+    width: 60px;
+    margin-left: 165px;
+
+
+}
+
+.contact-container2{
+
+    transform: translate(780%, -750%);
+    /* background-color: blue; */
+    height: 60px;
+    width: 60px;
+    margin-left: 165px;
+
+
+}
+
+.linked-icon{
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: -55px;
+}
+
+.linkedin-link{
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    color: #f29389;
+    text-decoration: none;
+    font-family: outfit;
+    margin-left: 100px;
+   
+    z-index: 500;
+
+
+
+}
+
+
+
+/* IF using image */
+.image{
+    width: 100%;
+    /* margin-bottom: -150px; */
+    /* width: 100%; */
+    /* height: 105vh; */
+    height: auto; 
+    padding-top: 30px;
+    object-fit: contain;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+
+/* HEADER */
+.header{
+    height: 60px; 
+
+    display:flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+
+    /* making sure the header doesn't move */
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0;
+    /* USE Z-INDEX TO MAKE HEADER APPEAR ABOVE THUMBNAIL (default = 0) */
+    z-index: 100; 
+
+    background-color:  #ecf0f3;  
+    /* adding a border */
+    border-bottom-width: 1px; 
+    border-bottom-style:hidden;
+    /* border-bottom-color: rgb(228, 228, 228); */
+
+}
+
+
+.logo{
+    margin-left: 79px;
+    margin-top: 5px; 
+    cursor: pointer;
+    transition: 0.15s; 
+   
+}
+
+.logo:hover{
+    opacity: 85%; 
+    transition: 0.15s; 
+}
+
+
+
+.header_buttons{
+    display:flex; 
+    /* aligned horiz */
+    justify-content: center; 
+    align-items: center; 
+    /* position: relative; */
+    /* cursor: pointer; 
+    transition: 0.15s;   */
+    padding-right: 100px;
+   
+
+    /* flex-shrink: 0;  */
+
+   
+    
+
+}
+
+
+.home_container ,
+.about_container,
+.portfolio_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px; 
+  margin-left: 20px; 
+ 
+ 
+}
+
+.contact_container {
+    margin-right: 0;
+  }
+
+
+
+.about-button{
+    font-family: Outfit; 
+    font-weight: 500; 
+    font-size: 15px;
+    color:#f29389; 
+    flex-shrink: 0;
+    padding: 8px 16px;
+    border-radius: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-color: #f29389; 
+    border-style:solid;
+    border-width: thin;
+    cursor:pointer; 
+    transition: 0.15s; 
+
+  }
+.button1,.portfolio-button{
+    /* border: none; */
+
+    /* padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 30px; */
+
+    /* flex-shrink: 0; 
+    overflow: hidden; 
+    text-overflow: ellipsis;  */
+
+    font-family: Outfit; 
+    font-weight: 500; 
+    font-size: 15px;
+    color: #293241; 
+    flex-shrink: 0;
+    padding: 8px 16px;
+    border-radius: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-color: #293241; 
+    border-style:solid;
+    border-width: thin;
+    cursor:pointer; 
+    transition: 0.15s; 
+
+ 
+   
+    
+    /* circular buttons */
+    /* border-radius: 30px; */
+   
+
+   
+}
+
+.button1:hover{
+    /* background-color: #d4d3d3 ; */
+    color:  #f29389;
+    border-color:  #f29389;
+}
+
+.button2{
+    border-radius: 0;
+    border: none; 
+    font-family: Outfit; 
+    font-weight: 700; 
+    font-size: 15px;
+    color:#293241; 
+    cursor: pointer; 
+    transition: 0.15s; 
+    /* background-color: #f5948a;  */
+    /* border: none;  */
+    /* pink f5948a */
+    /* blue 293241 */
+}
+
+.button2:hover{
+  color: #293241;
+ 
+}
+
+
+/* PORTFOLIO DROP DOWN */
+.dropdown{
+    position: relative; 
+    display: inline-block;
+    
+}
+
+
+  /* OVERLAY */
+  .portfolio-overlay{
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    /* bottom: 250px; */
+    background-color: #ecf0f3; /* adjust the background color and transparency as desired */
+    z-index: 999;
+    
+    /* IMP */
+    /* height: 0; 
+    transition: height 0.15s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+    z-index: 999; */
+
+
+  }
+
+  .portfolio-contents a:hover {background-color: #ddd;
+    
+
+  }
+
+ .dropdown:hover .portfolio-contents {display: block; 
+    
+}
+
+ .dropdown:hover .portfolio-button { color:  #f29389;
+    border-color:  #f29389; }
+
+.dropdown:hover .portfolio-overlay{
+    height: 65%; 
+}
+
+
+/* .dropdown:hover .overlay-link{
+    display: block; 
+} */
+
+
+/* The actual links + their properties */
+.overlay-link{
+    color: black; 
+    text-decoration: none;
+    font-family: outfit;
+    font-weight: 300;
+    font-size: 45px; 
+    margin-top: 10px;
+    transition: 0.15s; 
+    /* display: none;  */
+   
+}
+
+/* The actual links + their properties: hover */
+.overlay-link:hover{
+    color:#f29389; 
+    opacity: 0.8; 
+    font-size: 55px; 
+    font-weight: 500;
+}
+
+
+/* The div holding the links */
+.port-links{
+    display: none; 
+    height: 60px; 
+    flex-direction:column; 
+    justify-content: space-between; 
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+
+
+.inner-text{
+    color: #f39781; 
+    opacity: 1; 
+    font-style: italic;
+
+}
+
+
+/* Page end: */
+
+/* --------------------------- */
+
+/* Fixing header when re-size */
+@media (max-width:750px){
+    .header_buttons, .header{
+        display:flex; 
+        /* aligned horiz */
+        justify-content: center; 
+        align-items: center; 
+        /* once we get to screen size 750 px, 
+           screen will resize to 2 columns per row
+           instead of 3 */
+        
+    }
+    
+}
+
+/* LOGO ADJUSTMENT */
+/* Between these two window widths  */
+@media(min-width: 499px) and (max-width: 1510px){
+    .logo{
+        margin-left: 79px;
+        margin-top: 5px; 
+        cursor: pointer;
+        height: 55px;
+
+       
+    }
+}
+
+
+/* When screen goes to 500 logo will shrink */
+@media (max-width: 500px){
+    .logo{
+
+        margin-left: 79px;
+        margin-top: 5px; 
+        cursor: pointer;
+        height: 30px;
+
+    }
+    
+}
+
+
+
+/* -------------------------------------------- */
+
+/* Adjustments for MacBook Pro 13" screens and smaller */
+@media (max-width: 1440px) {
+    .header {
+        padding: 0 10px; /* Adjust header padding */
+    }
+
+    .logo {
+        height: 25px; /* Smaller logo size */
+    }
+
+    .banner-text {
+        font-size: 40px; /* Decrease font size */
+    }
+
+    .image {
+        padding-top: 20px; /* Adjust image padding */
+    }
+
+    .linked-icon {
+        height: 50px; /* Smaller icon size */
+        margin-bottom: -45px; /* Adjust margin */
+    }
+
+    .linkedin-link {
+        font-size: 30px; /* Decrease font size */
+    }
+}
+
+
+/* Adjustments for smaller screens (e.g., MacBook Air) */
+@media (max-width: 1394px) {
+
+   
+
+
+    .linked-icon {
+        height: 30px; 
+        margin-bottom: -35px; 
+    }
+
+    .linkedin-link {
+        font-size: 20px; 
+    }
+    
+}
