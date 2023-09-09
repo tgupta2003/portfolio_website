@@ -10,14 +10,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     //LOGO
     document.getElementById("top-logo").addEventListener("click", function() {
-        window.location.href = "home.html";
+        window.location.href = "index.html";
     });
 
     //---------------------------
     //HEADER BUTTONS 
     //HOME
     document.getElementById("home-button").addEventListener("click", function() {
-        window.location.href = "home.html";
+        window.location.href = "index.html";
     });
 
     //ABOUT
